@@ -122,6 +122,7 @@ export default function DashboardPage() {
             <Button
               variant="outlined"
               startIcon={<SearchIcon />}
+              onClick={() => router.push('/find-spots')}
             >
               Find Available Spots
             </Button>
