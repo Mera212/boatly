@@ -14,10 +14,11 @@ export default function Navbar() {
         <Image
           src="/Logo.png"
           alt="Boatly Logo"
-          width={120}
-          height={25}
+          width={240}
+          height={50}
           priority
           className="dark:invert"
+          style={{ width: '240px', height: '50px', objectFit: 'contain' }}
         />
       </Link>
       <div className="flex items-center gap-4">
