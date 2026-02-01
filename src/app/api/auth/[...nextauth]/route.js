@@ -4,7 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 import AppleProvider from "next-auth/providers/apple";
 
 // Mock users (replace with DB-backed users in production)
-const users = [
+export const users = [
   { id: '1', name: 'Alice Landlord', email: 'alice@demo.com', password: 'password123', role: 'landlord' },
   { id: '2', name: 'Bob Renter', email: 'bob@demo.com', password: 'password123', role: 'renter' }
 ];

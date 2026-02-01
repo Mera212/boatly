@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Boatly Mobile",
+    "slug": "boatly-mobile",
+    "version": "0.1.0",
+    "sdkVersion": "48.0.0",
+    "platforms": ["ios", "android", "web"],
+    "orientation": "portrait",
+    "entryPoint": "./App.js",
+    "android": {
+      "package": "com.yourcompany.boatlymobile"
+    }
+  }
+}

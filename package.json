@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:mobile": "npm --prefix ./mobile start",
+    "dev:all": "concurrently -k \"npm run dev\" \"npm --prefix ./mobile start\" -n backend,mobile -c green,cyan",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -18,7 +20,8 @@
     "mongodb": "^6.20.0",
     "mongoose": "^8.19.3",
     "next": "15.5.4",
-    "next-auth": "^4.24.13",
+  "next-auth": "^4.24.13",
+  "jsonwebtoken": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^5.0.0"
@@ -26,6 +29,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "concurrently": "^8.2.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "tailwindcss": "^4"
